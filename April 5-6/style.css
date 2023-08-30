@@ -1,0 +1,466 @@
+body {
+    background-image: url("https://www.dieweltenbummler.de/wp-content/uploads/2017/02/Einsamer-Highway-50.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*********/
+body .body {
+    background-color: rgba(208, 208, 242, 0.5);
+    background-size: cover;
+    border-radius: 20px;
+    border: skyblue 2px solid;
+    box-shadow: 0px 0px 20px black;
+}
+
+/*********/
+body .body header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(192, 192, 192, 0.8);
+    border: darkgrey 3px solid;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px black;
+}
+
+/**********/
+body .body header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+body .body header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 20%;
+}
+
+body .body header nav ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+body .body header nav ul li a {
+    text-decoration: none;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+/**********/
+body .body header img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+}
+
+body .body header div {
+    width: 100%;
+    text-align: center;
+    margin-left: 20%;
+    margin-bottom: 25px;
+
+}
+
+body .body header div .suchen {
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+body .body header div .suchen:hover {
+    background-color: rgba(215, 233, 227, 0.805);
+    width: 30%;
+    border-radius: 10px;
+}
+ /*** hier wird den inhalt im zwei spalten aufgeteilt. ****/
+body .body .main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-start: 1;
+}
+
+body .body .main img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 15px black;
+}
+
+body .body .main p {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+body .body .main h3 {
+    width: 100%;
+    text-align: center;
+
+}
+/*** den div-1 fingt ab dem erste spalte mit der
+      hilfe (grid-column end):2. der zwei spalte für sich haben.***/
+
+body .body .main .div-1 {
+    grid-column-end: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(169, 169, 169, 0.3);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 80px;
+    width: 98%;
+    height: 80vh;
+    margin: 10px;
+
+}
+
+body .body .main .div-1 div {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 80px;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    margin: 20px;
+}
+
+body .body .main .div-1 div img {
+    width: 220px;
+    height: 220px;
+    margin-left: 22%;
+}
+
+body .body .main .div-1 div p {
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+/*** den div-2 fingt ab dem zweite spalte mit der
+      hilfe (grid-column start):2.***/
+      /** grid-row-start: 2; ab dem zweitw row fingt an.**/
+      /*** hier habe ich auch den hintergrund farbe gemacht.***/
+body .body .main .div-2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 50px;
+    background-color: rgba(169, 169, 169, 0.3);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 80px;
+    width: 400px;
+    height: 480px;
+    padding: 10px;
+    margin: 20px;
+}
+
+body .body .main .div-2 img {
+    align-items: center;
+    margin-left: 26%;
+}
+
+body .body .main .div-2 p {
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    width: 320px;
+}
+
+body .body .main .div-3 {
+    grid-column-end: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(169, 169, 169, 0.3);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 80px;
+    width: 98%;
+    height: 80vh;
+    margin: 10px;
+}
+
+body .body .main .div-3 div {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 80px;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    margin: 20px;
+}
+
+body .body .main .div-3 div img {
+    width: 220px;
+    height: 220px;
+    margin-left: 22%;
+}
+
+body .main .div-3 div p {
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/**** Daten******/
+body .body .daten {
+    width: 98%;
+    background-color: rgba(192, 192, 192, 0.3);
+    border: darkgrey 3px solid;
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px black;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+body .body .daten a {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+    text-decoration: none;
+    color: darkblue;
+}
+
+/***** Die footer fingt von hier an.******/
+body .body footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border: darkgrey 3px solid;
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px black;
+}
+
+/**** Meine zweite divs flex-wrap:nowrap**/
+body .body footer .footer-2 {
+    flex-wrap: nowrap;
+}
+
+/**** die dritte div hat auch disply-flex,die ich am ende 
+und mittig gemacht mit der hilfe align-items:flex-end
+und justify-content:center*****/
+footer .footer-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/**** hier habe ich nur mein logoes oder bilder
+padding und margin gegeben.*****/
+footer .footer-3 img {
+    padding: 8px;
+    margin: 5px;
+    margin-bottom: 30%;
+}
+
+/****** Mein Impressum Seite*******/
+body .body .impress {
+    padding: 10px;
+    margin: 10px;
+}
+
+body .body .impress .div-1a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.097);
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px black;
+    width: 96%;
+    height: 640px;
+    padding: 10px;
+    margin: 20px;
+}
+
+body .body .impress .div-1a div {
+    padding: 10px;
+    margin: 10px;
+    height: 160px;
+    width: 200px;
+
+}
+
+body .body .impress .div-1a .a1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body .body .impress .div-1a .a1 div {
+    box-shadow: 0px 0px 30px black;
+    background-color: rgba(169, 169, 169, 0.097);
+    border-radius: 50px;
+    align-items: center;
+}
+
+body .body .impress .div-1a .a2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body .body .impress .div-1a .a2 div {
+    box-shadow: 0px 0px 30px black;
+    background-color: rgba(169, 169, 169, 0.097);
+    border-radius: 50px;
+    align-items: center;
+}
+
+body .body .impress .div-1a .a3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+body .body .impress .div-1a .a3 div {
+    box-shadow: 0px 0px 30px black;
+    background-color: rgba(169, 169, 169, 0.097);
+    border-radius: 50px;
+    align-items: center;
+}
+
+body .body .impress .div-2a {
+    background-color: rgba(169, 169, 169, 0.097);
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px black;
+    width: 95%;
+    height: 250px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+/**** Ab hier fingt die Datenschutz seite:*******/
+body .body .datenschutz .schutz div{
+    padding: 50px;
+    margin: 50px;
+}
+body .body .datenschutz .schutz h3 {
+    width: 100%;
+    color: darkblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+body .body .datenschutz .schutz p {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body .body .datenschutz .schutz h4 {
+    width: 100%;
+    color: red;
+}
+
+body .body .datenschutz .schutz h5 {
+    width: 100%;
+    color: blue;
+    padding: 10px;
+    margin: 10px;
+}
+body .body .datenschutz .schutz img {
+    width: 1300px;
+    height: 550px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+
+/**** Ab hier fingt die AGB seite:*******/
+body .body .agb div{
+    padding: 30px;
+    margin: 30px;
+}
+body .body .agb h3 {
+    width: 100%;
+    color: darkblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+body .body .agb p {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**** Ab hier fingt die Info seite:*******/
+body .body .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+ /*** hier wird den inhalt im zwei spalten aufgeteilt. ****/
+body .body .info .div-1,
+body .body .info .div-2,
+body .body .info .div-3,
+body .body .info .div-4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 320px;
+    max-height: 300px;
+    background-color: rgba(137, 43, 226, 0.405);
+    box-shadow: 0px 0px 20px darkviolet;
+    color: white;
+    text-shadow: black 0px 0px 10px;
+    padding: 10px;
+    margin: 10px;
+}
+/*** Breite für Bilder anpassen.***/
+body .body .info img{
+    max-width: 160px;
+    max-height: 160px;
+    box-shadow:  black 0px 0px 20px;
+    border-radius: 30px;
+    padding:0px;
+    margin: 10px;
+
+ }
+body .body .info h3{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+body .body .info p{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+body .body .info .big{
+    max-height: 140px;
+    overflow: auto;
+}
